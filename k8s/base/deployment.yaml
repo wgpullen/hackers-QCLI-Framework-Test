@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hackers-organized
+  labels:
+    app: hackers-organized
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hackers-organized
+  template:
+    metadata:
+      name: hackers-organized
+      labels:
+        app: hackers-organized
+    spec:
+      containers:
+        - name: hackers-organized
+          image: ldonleycb/hackers-organized
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: ho-cm
+          ports:
+            - containerPort: 80
+              protocol: TCP
+      restartPolicy: Always

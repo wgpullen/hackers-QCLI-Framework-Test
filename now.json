@@ -1,0 +1,5 @@
+{
+  "env": {
+    "VUE_APP_ROLLOUT_KEY": "@vue_app_rollout_key"
+  }
+}

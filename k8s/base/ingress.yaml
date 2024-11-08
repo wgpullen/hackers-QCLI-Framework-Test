@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hackers-organized
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: hackers-organized.preview.cb-demos.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hackers-organized
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - hackers-organized.preview.cb-demos.io
+      secretName: ho-tls
