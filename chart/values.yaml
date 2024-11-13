@@ -1,0 +1,10 @@
+image:
+  repository: ldonleycb/hackers-organized
+  tag: stable
+  pullPolicy: Always
+
+hostname: replace-me.example.com
+
+fmKey: "replace-me"
+
+replicas: 1
