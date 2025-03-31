@@ -1,13 +1,10 @@
 name: test-and-build-image2
 on:
-  push:
-    branches:
-      - "**"
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
     env:
       VUE_APP_ROLLOUT_KEY: ${{ secrets.VUE_APP_ROLLOUT_KEY }}
     steps:
