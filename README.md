@@ -1,3 +1,7 @@
+# ###########################################################
+# PLEASE NOTE:  DOW Demo YAML File located in Root Directory
+# ###########################################################
+
 # vue-hn-clone
 
 This app is a Vue.js-based clone of [Hacker News](https://hn.ycombinator.com).
