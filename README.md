@@ -1,69 +1,51 @@
-# ###########################################################
-# PLEASE NOTE:  DOW Demo YAML File located in Root Directory
-# ###########################################################
+# 🚀 Q CLI Interactive Demo Framework Test
 
-# vue-hn-clone
+## 🎯 Demo Objective
+This repository demonstrates the **HYBRID GITHUB APPROACH** using both GitHub CLI and GitHub MCP Server capabilities within the Amazon Q CLI Interactive Demo Framework.
 
-This app is a Vue.js-based clone of [Hacker News](https://hn.ycombinator.com).
+## 🔧 Hybrid Approach Demonstration
 
-## Objective
+### **✅ GitHub CLI Used For:**
+- ✅ **Repository Forking:** `gh repo fork cloudbees-days/hackers-source --fork-name hackers-QCLI-Framework-Test`
+- ✅ **Repository Management:** Custom naming, organization targeting
+- ✅ **Pull Request Workflow:** (Next steps in demo)
 
-It is helpful to have a go-to app for demoing new tools - this is mine. It's nice to have an app that is more than just a hello world, so I tried to create one that mirrors something usable to some degree.
+### **✅ GitHub MCP Server Used For:**
+- ✅ **Repository Analysis:** `search_repositories` and `get_file_contents`
+- ✅ **Content Updates:** `create_or_update_file` (this README update)
+- ✅ **Batch Operations:** Multiple file updates (upcoming)
 
-## Tech info
+## 🎬 Interactive Framework Success
 
-- [Vue.js](https://vuejs.org/) - The frontend web framework used to build the site
-- [HackerNews/API](https://github.com/HackerNews/API) - Source of data
-- [Bulma](https://bulma.io) (Specifically [Buefy](https://buefy.org)) - the CSS framework I've used
+This demonstrates the **INTERWEAVING** of GitHub CLI and GitHub MCP Server capabilities:
 
-This app is far from an ideal architecture - it is currently all client-side rendered and re-pulls all data on page change.
-In the future I may add [vuex](https://vuex.vuejs.org/) so it doesn't query the API every single page change.
+1. **Search & Analysis** → GitHub MCP Server
+2. **Fork & Management** → GitHub CLI  
+3. **Content Updates** → GitHub MCP Server
+4. **PR Workflow** → GitHub CLI
+5. **Batch Updates** → GitHub MCP Server
 
-Ideally you would use server-side rendering like [this example](https://github.com/vuejs/vue-hackernews-2.0) does (in fact, that app is all around better).
-But to make testing certain tools easier, being strictly client-side rendered is preferable.
+## 📋 Original Application Info
 
-## Deployment requirements
+This app is a Vue.js-based clone of [Hacker News](https://hn.ycombinator.com) - perfect for demonstrating CloudBees Unify capabilities.
 
-You need to set the `VUE_APP_ROLLOUT_KEY` environment variable to your CloudBees SDK key.
+### Tech Stack
+- [Vue.js](https://vuejs.org/) - Frontend framework
+- [HackerNews/API](https://github.com/HackerNews/API) - Data source
+- [Bulma](https://bulma.io) - CSS framework
 
-## Project setup
+### Deployment Requirements
+Set the `VUE_APP_ROLLOUT_KEY` environment variable to your CloudBees SDK key.
 
-```
-npm install
-```
+## 🚀 Next Demo Steps
 
-### Compiles and hot-reloads for development
+1. **Security Remediation** using hybrid approach
+2. **Pull Request Workflow** with GitHub CLI
+3. **CloudBees Integration** with MCP Server
+4. **Batch File Updates** for configuration
 
-```
-npm run serve
-```
+---
 
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Run your tests
-
-```
-npm run test
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Run your unit tests
-
-```
-npm run test:unit
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
+**Status:** ✅ Hybrid GitHub approach successfully demonstrated!
+**Framework:** Interactive Q CLI Demo Framework
+**Date:** September 2, 2025
