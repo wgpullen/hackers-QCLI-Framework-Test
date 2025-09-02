@@ -1,0 +1,19 @@
+name: Q CLI Interactive Demo Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Demonstrate Hybrid Approach
+      run: |
+        echo "✅ This workflow was created via GitHub MCP Server"
+        echo "✅ Repository was forked via GitHub CLI"
+        echo "✅ PR management via GitHub CLI"
+        echo "✅ Batch updates via GitHub MCP Server"
